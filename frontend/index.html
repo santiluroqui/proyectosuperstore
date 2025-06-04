@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Ventas Superstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Ventas Superstore</h1>
+    </header>
+
+    <main>
+        <section class="filters">
+            <label for="categoryFilter">Categoría:</label>
+            <select id="categoryFilter"></select>
+
+            <label for="regionFilter">Región:</label>
+            <select id="regionFilter"></select>
+
+            <label for="segmentFilter">Segmento:</label>
+            <select id="segmentFilter"></select>
+        </section>
+
+        <section class="data-table-section">
+            <h2>Datos de Órdenes</h2>
+            <table id="dataTable" class="display">
+                <thead>
+                    </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </section>
+
+        <section class="charts-section">
+            <h2>Visualizaciones</h2>
+            <div class="charts-grid">
+                <div class="chart-container"><canvas id="chartBar"></canvas></div>
+                <div class="chart-container"><canvas id="chartPie"></canvas></div>
+                <div class="chart-container"><canvas id="chartLine"></canvas></div>
+                <div class="chart-container"><canvas id="chartRadar"></canvas></div>
+                <div class="chart-container"><canvas id="chart1"></canvas></div>
+                <div class="chart-container"><canvas id="chart2"></canvas></div>
+                <div class="chart-container"><canvas id="chart3"></canvas></div>
+                <div class="chart-container"><canvas id="chart4"></canvas></div>
+                <div class="chart-container"><canvas id="chart5"></canvas></div>
+                <div class="chart-container"><canvas id="chart6"></canvas></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dashboard de Ventas</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
